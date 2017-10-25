@@ -1,0 +1,26 @@
+<h1>ingreso de ventas</h1>
+
+<h2>Registro fue ingresado con éxito</h2>
+
+<table class="table">
+	<tr>
+	    <th>id</th>
+		<th>cod</th>
+		<th>category</th>
+		<th>value</th>
+		<th>descuento</th>
+		<th>detalle</th>
+		<th>tax</th>
+	</tr>
+	<tr>
+		<th><%=@sale.id%></th>
+		<th><%=@sale.cod%></th>
+		<th><%=@sale.category%></th>
+		<th><%=@sale.value%></th>
+		<th><%=@sale.discount%></th>
+		<th><%=@sale.detail%></th>
+		<th><%=@sale.tax%></th>
+	</tr>
+</table>
+
+<%= link_to 'volver', sales_new_path %>

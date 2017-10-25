@@ -1,14 +1,14 @@
 <h1>Formulario de ingreso de ventas</h1>
 
-<%= form_with model: @sale, url:sales_path, local: true do |f| %>
+<%= form_with model: @sale, url: sales_path, local: true do |f| %>
 <%= label_tag 'Detalle' %> <br>
-<%= f.text_area :detalle %><br>
+<%= f.text_area :detail %><br>
 <%= label_tag 'Categoria' %>  
-<%= f.select :Categoria, options_for_select([["Uno", "1"], ["Dos", "2"], ["Tres", "3"], ["Cuatro", "4"], ["Cinco", "5"]]) %><br><br>
+<%= f.select :category, options_for_select([["Uno", 1], ["Dos", 2], ["Tres", 3], ["Cuatro", 4], ["Cinco", "5"]]) %><br><br>
 <%= label_tag 'Valor' %>  
-<%= f.text_field :valor %><br>
+<%= f.text_field :value %><br>
 <%= label_tag 'Descuento' %>  
-<%= f.text_field :descuento %><br>
+<%= f.text_field :discount %><br>
 <%= label_tag 'Exento de iva' %>  
 <%= f.check_box :tax %><br>
 <%= f.submit "Enviar" %>
